@@ -1,6 +1,3 @@
-CAMPOS Ludovic, email: ludo830@hotmail.fr
-CANNARD Adrien, email: adriencannard@gmail.com
-
 Sujet : Casse-brique en GTK+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPILATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 Pour compiler, il suffit de rentrer dans un terminal la ligne de commande "make depend all".
