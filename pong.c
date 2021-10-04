@@ -64,14 +64,14 @@ void bonus_init(Info *info)
 
 void balle_init(Info *info)
 {
-  info->nb_balle = 1;
-  info->balle[1].x     = 0;	
-  info->balle[1].y     = 0;
-  info->balle[1].dx    = 2;
-  info->balle[1].dy    = -2;
-  info->balle[1].r     = 5;
-  info->balle[1].b     = 0;
-  info->balle[1].c     = 0;
+  info->nb_balle       =  1 ;
+  info->balle[1].x     =  0 ;	
+  info->balle[1].y     =  0 ;
+  info->balle[1].dx    =  2 ;
+  info->balle[1].dy    = -2 ;
+  info->balle[1].r     =  5 ;
+  info->balle[1].b     =  0 ;
+  info->balle[1].c     =  0 ;
 }
 
 int brique_init(Info *info)
@@ -111,11 +111,11 @@ int brique_init(Info *info)
 
 void raquette_init (Info *info)
 {
-  info->raq.x  = 100;
-  info->raq.y  = 100;
-  info->raq.rx = 35;
-  info->raq.ry = 4;
-  info->raq.b  = 0;
+  info->raq.x  = 100 ;
+  info->raq.y  = 100 ;
+  info->raq.rx =  35 ;
+  info->raq.ry =   4 ;
+  info->raq.b  =   0 ;
 }
 
 void info_init (Info *info, char *lvl)
@@ -171,30 +171,30 @@ void test_bonus(Info *info, int i)
     {
       
       info->nb_balle = info->nb_balle + 3; 
-      info->balle[info->nb_balle-2].x  =  info->balle[info->nb_balle-3].x;	
-      info->balle[info->nb_balle-2].y  =  info->balle[info->nb_balle-3].y;
-      info->balle[info->nb_balle-2].dx = -info->balle[info->nb_balle-3].dx;
-      info->balle[info->nb_balle-2].dy =  info->balle[info->nb_balle-3].dy;
-      info->balle[info->nb_balle-2].r  =  info->balle[info->nb_balle-3].r;
-      info->balle[info->nb_balle-2].b  =  info->balle[info->nb_balle-3].b;
-      info->balle[info->nb_balle-2].c  =  info->balle[info->nb_balle-3].c;
+      info->balle[ info->nb_balle-2 ].x  =  info->balle[ info->nb_balle-3 ].x  ;	
+      info->balle[ info->nb_balle-2 ].y  =  info->balle[ info->nb_balle-3 ].y  ;
+      info->balle[ info->nb_balle-2 ].dx = -info->balle[ info->nb_balle-3 ].dx ;
+      info->balle[ info->nb_balle-2 ].dy =  info->balle[ info->nb_balle-3 ].dy ;
+      info->balle[ info->nb_balle-2 ].r  =  info->balle[ info->nb_balle-3 ].r  ;
+      info->balle[ info->nb_balle-2 ].b  =  info->balle[ info->nb_balle-3 ].b  ;
+      info->balle[ info->nb_balle-2 ].c  =  info->balle[ info->nb_balle-3 ].c  ;
       
-      info->balle[info->nb_balle-1].x  =  info->balle[info->nb_balle-3].x;	
-      info->balle[info->nb_balle-1].y  =  info->balle[info->nb_balle-3].y;
-      info->balle[info->nb_balle-1].dx =  info->balle[info->nb_balle-3].dx;
-      info->balle[info->nb_balle-1].dy = -info->balle[info->nb_balle-3].dy;
-      info->balle[info->nb_balle-1].r  =  info->balle[info->nb_balle-3].r;
-      info->balle[info->nb_balle-1].b  =  info->balle[info->nb_balle-3].b;
-      info->balle[info->nb_balle-1].c  =  info->balle[info->nb_balle-3].c;
+      info->balle[ info->nb_balle-1 ].x  =  info->balle[ info->nb_balle-3 ].x  ;	
+      info->balle[ info->nb_balle-1 ].y  =  info->balle[ info->nb_balle-3 ].y  ;
+      info->balle[ info->nb_balle-1 ].dx =  info->balle[ info->nb_balle-3 ].dx ;
+      info->balle[ info->nb_balle-1 ].dy = -info->balle[ info->nb_balle-3 ].dy ;
+      info->balle[ info->nb_balle-1 ].r  =  info->balle[ info->nb_balle-3 ].r  ;
+      info->balle[ info->nb_balle-1 ].b  =  info->balle[ info->nb_balle-3 ].b  ;
+      info->balle[ info->nb_balle-1 ].c  =  info->balle[ info->nb_balle-3 ].c  ;
       
-      info->balle[info->nb_balle].x    =  info->balle[info->nb_balle-3].x;	
-      info->balle[info->nb_balle].y    =  info->balle[info->nb_balle-3].y;
-      info->balle[info->nb_balle].dx   = -info->balle[info->nb_balle-3].dx;
-      info->balle[info->nb_balle].dy   = -info->balle[info->nb_balle-3].dy;
-      info->balle[info->nb_balle].r    =  info->balle[info->nb_balle-3].r;
-      info->balle[info->nb_balle].b    =  info->balle[info->nb_balle-3].b;
-      info->balle[info->nb_balle].c  =  info->balle[info->nb_balle-3].c;
-      b->b = 0;
+      info->balle[ info->nb_balle ].x    =  info->balle[ info->nb_balle-3 ].x  ;	
+      info->balle[ info->nb_balle ].y    =  info->balle[ info->nb_balle-3 ].y  ;
+      info->balle[ info->nb_balle ].dx   = -info->balle[ info->nb_balle-3 ].dx ;
+      info->balle[ info->nb_balle ].dy   = -info->balle[ info->nb_balle-3 ].dy ;
+      info->balle[ info->nb_balle ].r    =  info->balle[ info->nb_balle-3 ].r  ;
+      info->balle[ info->nb_balle ].b    =  info->balle[ info->nb_balle-3 ].b  ;
+      info->balle[ info->nb_balle ].c    =  info->balle[ info->nb_balle-3 ].c  ;
+      b->b = 0 ;
     }
 
     if(b->b == 4)
@@ -624,9 +624,12 @@ void briques_calculer_collisions (Info *info)
 	  if(info->balle[j].dx > 0 && info->balle[j].dy > 0)
 	    {
 	      /*collision angle haut gauche*/
-	      if ((info->balle[j].x + info->balle[j].r)  >= (info->brique[i].x - info->balle[j].r) && 
-		  (info->balle[j].x + info->balle[j].r)  <=  info->brique[i].x &&
-		  (info->balle[j].y + info->balle[j].r)  >= (info->brique[i].y - info->balle[j].r) &&  
+	      if ((info->balle[j].x + info->balle[j].r)  >= (info->brique[i].x - info->balle[j].r) 
+		  && 
+		  (info->balle[j].x + info->balle[j].r)  <=  info->brique[i].x 
+		  &&
+		  (info->balle[j].y + info->balle[j].r)  >= (info->brique[i].y - info->balle[j].r) 
+		  &&  
 		  (info->balle[j].y + info->balle[j].r)  <=  info->brique[i].y)
 		{
                  
@@ -665,9 +668,12 @@ void briques_calculer_collisions (Info *info)
 		}
 	      
 	      /*collision bas balle[j] =)*/
-	      else if((info->balle[j].y + info->balle[j].r)>=(info->brique[i].y - info->balle[j].r)&&
-		      (info->balle[j].y + info->balle[j].r)<=(info->brique[i].y )&&
-		      (info->balle[j].x + info->balle[j].r)>(info->brique[i].x)&&
+	      else if((info->balle[j].y + info->balle[j].r)>=(info->brique[i].y - info->balle[j].r)
+		      &&
+		      (info->balle[j].y + info->balle[j].r)<=(info->brique[i].y )
+		      &&
+		      (info->balle[j].x + info->balle[j].r)>(info->brique[i].x)
+		      &&
 		      (info->balle[j].x + info->balle[j].r)<(info->brique[i].x + info->brique[i].w ))
 		{
 		  if(info->balle[j].b == 1 && info->brique[i].f >= 1)
@@ -702,9 +708,12 @@ void briques_calculer_collisions (Info *info)
 		}
 	      
 	      /*collision droite balle[j]*/
-	      else if((info->balle[j].x + info->balle[j].r)>=(info->brique[i].x - info->balle[j].r)&&
-		      (info->balle[j].x + info->balle[j].r)<=(info->brique[i].x)&&
-		      (info->balle[j].y + info->balle[j].r)> (info->brique[i].y)&&
+	      else if((info->balle[j].x + info->balle[j].r)>=(info->brique[i].x - info->balle[j].r)
+		      &&
+		      (info->balle[j].x + info->balle[j].r)<=(info->brique[i].x)
+		      &&
+		      (info->balle[j].y + info->balle[j].r)> (info->brique[i].y)
+		      &&
 		      (info->balle[j].y + info->balle[j].r)< (info->brique[i].y + info->brique[i].h))
 		{  
 		  if(info->balle[j].b == 1 && info->brique[i].f >= 1)
@@ -713,10 +722,10 @@ void briques_calculer_collisions (Info *info)
 		      info->score       = info->score + 60;
 		      if(info->brique[i].bonus > 0 && info->brique[i].f == 0)
 			{
-			  info->nb_bonus = info->nb_bonus+1;
-			  info->bonus[info->nb_bonus].b = info->brique[i].bonus;
-			  info->bonus[info->nb_bonus].x = info->brique[i].x;
-			  info->bonus[info->nb_bonus].y = info->brique[i].y;
+			  info->nb_bonus                = info->nb_bonus+1      ;
+			  info->bonus[info->nb_bonus].b = info->brique[i].bonus ;
+			  info->bonus[info->nb_bonus].x = info->brique[i].x     ;
+			  info->bonus[info->nb_bonus].y = info->brique[i].y     ;
 			}
 		      break;
 		    }
@@ -744,9 +753,12 @@ void briques_calculer_collisions (Info *info)
 	  else if(info->balle[j].dx > 0 && info->balle[j].dy < 0)
 	    {   
 	      /*collision angle bas gauche*/
-	      if ((info->balle[j].x + info->balle[j].r)  >= (info->brique[i].x - info->balle[j].r) && 
-		  (info->balle[j].x + info->balle[j].r)  <= (info->brique[i].x) &&
-		  (info->balle[j].y + info->balle[j].r)  >= (info->brique[i].y + info->brique[i].h) &&  
+	      if ((info->balle[j].x + info->balle[j].r)  >= (info->brique[i].x - info->balle[j].r)
+		  && 
+		  (info->balle[j].x + info->balle[j].r)  <= (info->brique[i].x)
+		  &&
+		  (info->balle[j].y + info->balle[j].r)  >= (info->brique[i].y + info->brique[i].h) 
+		  &&  
 		  (info->balle[j].y + info->balle[j].r)  <= (info->brique[i].y + info->brique[i].h + info->balle[j].r))
 		{
 		  if(info->balle[j].b == 1 && info->brique[i].f >= 1)
@@ -764,25 +776,29 @@ void briques_calculer_collisions (Info *info)
 		    }
 		  if(info->brique[i].f >= 1)
 		    {
-		      info->brique[i].f--;
-		      if(info->brique[i].f == 0) info->score = info->score + 20;
-		      info->balle[j].y     =  info->brique[i].y + info->brique[i].h + info->balle[j].r;
-		      info->balle[j].dy    = -info->balle[j].dy;
-		      info->balle[j].y     =  info->balle[j].y + info->balle[j].dy;
-		      info->balle[j].dx    = -info->balle[j].dx;
-		      info->balle[j].x     =  info->balle[j].x + info->balle[j].dx;
+		      info->brique[i].f-- ;
+		      
+		      if(info->brique[i].f == 0) info->score = info->score + 20 ;
+		      
+		      info->balle[j].y     =  info->brique[i].y + info->brique[i].h + info->balle[j].r ;
+		      info->balle[j].dy    = -info->balle[j].dy                                        ;
+		      info->balle[j].y     =  info->balle[j].y + info->balle[j].dy                     ;
+		      info->balle[j].dx    = -info->balle[j].dx                                        ;
+		      info->balle[j].x     =  info->balle[j].x + info->balle[j].dx                     ;
+		
 		      if(info->brique[i].bonus > 0 && info->brique[i].f == 0)
 			{
-			  info->nb_bonus = info->nb_bonus+1;
-			  info->bonus[info->nb_bonus].b = info->brique[i].bonus;
-			  info->bonus[info->nb_bonus].x = info->brique[i].x;
-			  info->bonus[info->nb_bonus].y = info->brique[i].y;
+			  info->nb_bonus                = info->nb_bonus+1      ;
+			  info->bonus[info->nb_bonus].b = info->brique[i].bonus ;
+			  info->bonus[info->nb_bonus].x = info->brique[i].x     ;
+			  info->bonus[info->nb_bonus].y = info->brique[i].y     ;
 			}
 		      break;
 		    }
 		}
 	      
 	      /*collision droite balle[j]*/
+		  //###
 	      else if((info->balle[j].x + info->balle[j].r)>=(info->brique[i].x - info->balle[j].r)&&
 		      (info->balle[j].x + info->balle[j].r)<=(info->brique[i].x)&&
 		      (info->balle[j].y + info->balle[j].r)> (info->brique[i].y)&&
